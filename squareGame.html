@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" href="css/squareGameStyle.css">
+</head>
+<body>
+    <div class="wrapper">
+   
+       <div class="main">
+            <div class="main__title">Найди квадраты</div>
+            <div class="main__box">
+                <div class="main__options">
+                    <div class="main__options__text">Кол-во Зеленых Клеток</div>
+                    <input class="input__winSquare main__input" type="number" value="10">
+                    <div class="main__options__text">Время до конца</div>
+                    <input class="input__time main__input" type="number" value="60">
+                    <a href="#" class="btn__startGame btn">Начать игру/Заново</a>
+                    <a href="index.html" class="btn">Главная страница</a>
+                </div>
+                <table class="main__table">
+                    <div class="win__lose"></div>
+                    <tr>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                    </tr>
+                    <tr>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                    </tr>
+                    <tr>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                    </tr>
+                    <tr>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                    </tr>
+                    <tr>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                    </tr>
+                    <tr>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                        <td id="square" class="" style="--i:9"></td>
+                    </tr>
+                    <tr>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                        <td id="square" class="" style="--i:7"></td>
+                    </tr>
+                    <tr>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                        <td id="square" class="" style="--i:5"></td>
+                    </tr>
+                    <tr>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                        <td id="square" class="" style="--i:3"></td>
+                    </tr>
+                    <tr>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                        <td id="square" class="" style="--i:1"></td>
+                    </tr>
+                </table>
+            </div>
+       </div>
+   
+       <div class="footer">
+            
+    </div>
+    <script src="js/squareGameScript.js"></script>
+</body>
+</html></html>

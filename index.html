@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__icon">
+                        <span></span>
+                    </div>
+
+                    <a href="#" class="header__logo">Портфолио.</a>
+    
+                    <nav class="header__nav">
+                        <div class="header__nav__block">
+                            <a href="#home" style="--i:1;" class="header__link link__active header-scroll">Домой</a>
+                            <a href="#about" style="--i:2;" class="header__link header-scroll">Обо мне</a>
+                            <a href="#services" style="--i:3;" class="header__link header-scroll">Мои навыки</a>
+                            <a href="#portfolio" style="--i:4;" class="header__link header-scroll">Проекты</a>
+                            <a href="#contact" style="--i:5;" class="header__link header-scroll">Контакты</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    
+        <div class="main">
+            <div class="container">
+                <section class="home" id="home">
+
+                    <div class="home__content">
+                        <h3 class="home__sub-title">Привет, меня зовут</h3>
+                        <h1 class="home__title">Демишев Михаил</h1>
+                        <h3 class="home__sub-title">И я <span class="purple__span">Frontend-разработчик</span></h3>
+                        <p class="home__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam molestiae necessitatibus hic cupiditate voluptatibus nam</p>
+                        <div class="home__social-media">
+                            <a href="#" style="--i:7;" class="home__social-link"><i class='bx bxl-facebook'></i></a>
+                            <a href="#" style="--i:8;" class="home__social-link"><i class='bx bxl-twitter'></i></a>
+                            <a href="#" style="--i:9;" class="home__social-link"><i class='bx bxl-instagram-alt'></i></a>
+                            <a href="#" style="--i:10;" class="home__social-link"><i class='bx bx-menu'></i></a>
+                        </div>
+                        <a id="SayHelloBtn" href="#" class="home__btn">Сказать Привет</a>
+                    </div>
+
+                    <div class="home__img">
+                        <img src="/img/homeFace.png" alt="" class="home__img-size">
+                    </div>
+
+                </section>
+            </div>
+            <div class="background__grey">
+                <div class="container">
+
+                    <section class="about" id="about">
+
+                        <div class="about__img">
+                            <img src="/img/aboutFace.png" alt="" class="about__img-size">
+                        </div>
+
+                        <div class="about__content">
+                            <h2 class="about__title">Обо <span class="purple__span">мне</span></h2>
+                            <h3 class="about__sub-title"><span class="purple__span">Я</span> Frontend-разработчик</h3>
+                            <p class="about__text">
+                                Мне нравится дизайн и программирование, и
+                                фронтенд - это как раз то что мне нужно.
+                                Хочу работать в команде над большими и интересными проектами.
+                            </p>
+                            <a href="#" class="about__btn">Подробнее</a>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+            <div class="container">
+                <section class="services" id="services">
+                    <h2 class="services__title">Мои <span class="purple__span">навыки</span></h2>
+
+                    <div class="services__container">
+                        <div class="services__box">
+                            <i class='bx bx-code-alt services__icon'></i>
+                            <h3 class="services__box__title">HTML</h3>
+                            <p class="services__box__text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Nisi, fuga tempora ea nemo nihil quam voluptatum dolore vitae temporibus tempore sed nam
+                            </p>
+                            <a href="#" class="services__btn">Подробнее</a>
+                        </div>
+
+                        <div class="services__box">
+                            <i class='bx bx-paint services__icon'></i>
+                            <h3 class="services__box__title">CSS</h3>
+                            <p class="services__box__text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Nisi, fuga tempora ea nemo nihil quam voluptatum dolore vitae temporibus tempore sed nam
+                            </p>
+                            <a href="#" class="services__btn">Подробнее</a>
+                        </div>
+
+                        <div class="services__box">
+                            <i class='bx bx-bar-chart-alt services__icon'></i>
+                            <h3 class="services__box__title">JavaScript</h3>
+                            <p class="services__box__text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Nisi, fuga tempora ea nemo nihil quam voluptatum dolore vitae temporibus tempore sed nam
+                            </p>
+                            <a href="#" class="services__btn">Подробнее</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="background__grey">
+                <div class="container">
+                    <section class="portfolio" id="portfolio">
+                        <h2 class="portfolio__title">Мои <span class="purple__span">проекты</span></h2>
+
+                        <div class="portfolio__container">
+                            <div class="portfolio__box">
+                                <img src="/img/wordGameImg.PNG" alt="" class="portfolio__img">
+                                <div class="portfolio__layer">
+                                    <h4 class="portfolio__layer__title">Игра в слова</h4>
+                                    <p class="portfolio__layer__text">Правила очень простые - первый игрок назвает слово по заданной теме,
+                                         второй игрок называет слово, первая буква которого совпадает с последней буквой слова, названного первым игроком
+                                    </p>
+                                    <a href="cityGame.html" class="portfolio__btn"><i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__box">
+                                <img src="/img/squareGameImg.PNG" alt="" class="portfolio__img">
+                                <div class="portfolio__layer">
+                                    <h4 class="portfolio__layer__title">Игра найди квадраты</h4>
+                                    <p class="portfolio__layer__text">В этой игре необходимо найти n-ое количество
+                                                                      квадратов из 100 пока не закончилось время
+                                    </p>
+                                    <a href="squareGame.html" class="portfolio__btn"><i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="container">
+                <section class="contact" id="contact">
+                    <h2 class="contact__title">Отправить <span class="purple__span">Отзыв</span></h2>
+            
+                    <form action="#" class="contact__box">
+                        <input type="text" placeholder="Полное Имя" class="contact__input">
+                        <input type="email" placeholder="Емайл" class="contact__input">
+                        <input type="tel" placeholder="Номер Телефона" class="contact__input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <input type="text" placeholder="Дополнительный Емайл" class="contact__input">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Ваше Сообщение" class="contact__message"></textarea>
+                        <input type="submit" value="Отправить" class="contact__btn">
+                    </form>
+                </section>
+            </div>
+        </div>
+        
+        <div class="background__grey">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__text">
+                        Copyright &copy; 2023 be codehal | All Rights Reserved.
+                    </div>
+        
+                    <a href="#home" class="footer__arrow"><i class='bx bx-up-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/scrollTo.js"></script>
+</body>
+</html>
